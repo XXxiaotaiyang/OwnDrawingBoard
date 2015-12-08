@@ -15,6 +15,8 @@
 		CA01557B1C16654A0043535D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0155791C16654A0043535D /* LaunchScreen.storyboard */; };
 		CA0155861C16654A0043535D /* _3___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0155851C16654A0043535D /* _3___Tests.m */; };
 		CA0155911C16654A0043535D /* _3___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0155901C16654A0043535D /* _3___UITests.m */; };
+		CA0155A01C16661A0043535D /* drawView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA01559F1C16661A0043535D /* drawView.m */; };
+		CA0155E41C16A35C0043535D /* PaintView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0155E31C16A35C0043535D /* PaintView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		CA01558C1C16654A0043535D /* 03-画板UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "03-画板UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0155901C16654A0043535D /* _3___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_3___UITests.m"; sourceTree = "<group>"; };
 		CA0155921C16654A0043535D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA01559E1C16661A0043535D /* drawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawView.h; sourceTree = "<group>"; };
+		CA01559F1C16661A0043535D /* drawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = drawView.m; sourceTree = "<group>"; };
+		CA0155E21C16A35C0043535D /* PaintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintView.h; sourceTree = "<group>"; };
+		CA0155E31C16A35C0043535D /* PaintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,13 @@
 		CA01556A1C16654A0043535D /* 03-画板 */ = {
 			isa = PBXGroup;
 			children = (
+				CA0156381C16B3E10043535D /* OtherView */,
 				CA01556E1C16654A0043535D /* AppDelegate.h */,
 				CA01556F1C16654A0043535D /* AppDelegate.m */,
 				CA0155711C16654A0043535D /* ViewController.h */,
 				CA0155721C16654A0043535D /* ViewController.m */,
+				CA01559E1C16661A0043535D /* drawView.h */,
+				CA01559F1C16661A0043535D /* drawView.m */,
 				CA0155741C16654A0043535D /* Main.storyboard */,
 				CA0155771C16654A0043535D /* Assets.xcassets */,
 				CA0155791C16654A0043535D /* LaunchScreen.storyboard */,
@@ -138,6 +147,15 @@
 				CA0155921C16654A0043535D /* Info.plist */,
 			);
 			path = "03-画板UITests";
+			sourceTree = "<group>";
+		};
+		CA0156381C16B3E10043535D /* OtherView */ = {
+			isa = PBXGroup;
+			children = (
+				CA0155E21C16A35C0043535D /* PaintView.h */,
+				CA0155E31C16A35C0043535D /* PaintView.m */,
+			);
+			name = OtherView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +290,8 @@
 			files = (
 				CA0155731C16654A0043535D /* ViewController.m in Sources */,
 				CA0155701C16654A0043535D /* AppDelegate.m in Sources */,
+				CA0155A01C16661A0043535D /* drawView.m in Sources */,
+				CA0155E41C16A35C0043535D /* PaintView.m in Sources */,
 				CA01556D1C16654A0043535D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
